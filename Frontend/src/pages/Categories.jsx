@@ -1,80 +1,67 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import CategoryCard from '../components/Categories_Components/CategoryCard'
 
 const Categories = () => {
 
-  const categoriesList = [
+  const categories = [
     {
+      categoryID: 1,
       name:"Personal Growth",
       color:"bg-emerald-300",
-      to:"/categories/personal_growth",
+      to:"/category/1",
     },
     {
+      categoryID: 2,
       name:"Business",
       color:"bg-sky-300",
-      to:"/categories/business",
+      to:"/category/2",
     },
     {
+      categoryID: 3,
       name:"History",
       color:"bg-yellow-300",
-      to:"/categories/history",
+      to:"/category/3",
     },
     {
+      categoryID: 4,
       name:"Entertainment",
       color:"bg-gray-300",
-      to:"/categories/entertainment",
+      to:"/category/4",
     },
     {
+      categoryID: 5,
       name:"Comedy",
       color:"bg-purple-300",
-      to:"/categories/comedy",
+      to:"/category/5",
     },
     {
+      categoryID:6,
       name:"Kids and Family",
       color:"bg-amber-300",
-      to:"/categories/kids_and_family",
+      to:"/category/6",
     },
     {
+      categoryID: 7,
       name:"News",
       color:"bg-orange-300",
-      to:"/categories/news",
+      to:"/category/7",
     },
     {
+      categoryID: 8,
       name:"Investigative Journalism",
       color:"bg-violet-200",
-      to:"/categories/personal_growth",
+      to:"/category/8",
     },
     {
+      categoryID: 9,
       name:"Fiction",
       color:"bg-rose-300",
-      to:"/categories/fiction",
+      to:"/category/9",
     },
   ]
-
-
-
+  
   return (
-
-    <div 
-    className="h-screen lg:h-[78vh] mt-4"
-    >
-      <div 
-      className="px-4 lg:px-12 py-4 gap-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
-      >
-
-        {categoriesList.map((items, i) => (
-                <Link 
-                key={0}
-                to={items.to}
-                className={`rounded-xl ${items.color} px-8 p-4 text-xl font-semibold hover:scale-105 shadow-xl relative `}
-                >
-                  <div>{items.name}</div>                  
-             </Link>
-        ))} 
-        
-      </div>
-    </div>
-
+    <CategoryCard categoriesList={categories} />
   )
 }
 

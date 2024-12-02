@@ -73,7 +73,7 @@ const Navbar = () => {
         </div>        
         
         <div className={`fixed top-0 left-0 w-full h-screen bg-blue-100
-          ${MobileNav ? "translate-y-[0%]" : "translate-y-[-100%]" } transition-transform duration-500 ease-in-out`}>
+          ${MobileNav ? "translate-y-[0%]" : "translate-y-[-100%]" } transition-transform duration-500 ease-in-out z-10`}>
 
           <div className={"h-full flex flex-col items-center justify-center"}>
             {" "}
