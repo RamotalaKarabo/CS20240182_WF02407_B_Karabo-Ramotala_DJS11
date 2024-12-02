@@ -10,14 +10,11 @@ import Login from './pages/Login'
 import Categories from './pages/Categories'
 import Profile from './pages/Profile'
 import AllPodcasts from './pages/AllPodcasts'
-import AddPodcasts from './pages/AddPodcasts'
 import PodcastLayout from './layout/PodcastLayout'
-import SeasonsLayout from './layout/SeasonsLayout'
-import EpisodesLayout from './layout/EpisodesLayout'
-import Seasons from './pages/Seasons'
-import Episodes from './pages/Episodes'
 import Podcast from './pages/Podcast'
-import ShowLayout from './layout/ShowLayout'
+import Episodes from './pages/Episodes'
+
+
 
 
 
@@ -35,7 +32,6 @@ const App = () => {
             <Route index element={<Home/>} />
             <Route path="categories" element={<Categories />} />
             <Route path="profile" element={<Profile />} />
-            <Route path="add-podcast" element={<AddPodcasts />} />
           </Route>
 
           {/* Podcast Route */}
@@ -44,9 +40,11 @@ const App = () => {
             <Route path="show/:showId" element={<Podcast />}/>
           </Route>
 
-          <Route path="/show/:showId/season/:seasonId" element={<EpisodesLayout/>}>
-            <Route index element={<Episodes/>} /> 
-          </Route>
+          <Route path="/:showId/seasons/:seasonId" element={<Episodes />}/>
+
+
+
+          
 
           {/* Authentication Route (Log-In || Sign-In) */}
           <Route path="/" element={<AuthenticationLayout />}>

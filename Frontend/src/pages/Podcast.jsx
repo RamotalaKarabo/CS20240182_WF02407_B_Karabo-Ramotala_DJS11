@@ -5,11 +5,9 @@ import { useParams } from 'react-router-dom'
 const Podcast = () => {
 
   const params = useParams();
-  console.log(params);
 
   return (
     <div>
-      {`Show:  ${params.showId}`}
       <Show showId={params.showId}/>
     </div>
   )

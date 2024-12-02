@@ -1,17 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import PodcastSeasonsCard from './PodcastSeasonsCard';
 
 const Show = ({showId}) => {
 
-    const seasons = [
-        {
-            seasonNumber: "",
-            seasonTitle: "",
-            seasonImage: ""
+    const showID = {showId};
 
-    }];
-  
-    const [show, setShow] = useState([]);
+    const [show, setShow] = useState([{}]);
     const [error, setError] = useState(null);
 
     useEffect(() => {
@@ -37,24 +31,17 @@ const Show = ({showId}) => {
         return <div>Error: {error}</div>;
     }
 
-    const data = { 
-        section1: 
-        [ 
-            { id: 1, name: 'Alice' }, 
-            { id: 2, name: 'Bob' } ], };
+    console.log(show);
+
 
     return (
         <div>
-            {Object.entries(data).map(([section, items]) => 
-            ( 
-            <div key={section}> 
-            <h2>{section}</h2> 
-            <ul> {items.map(item => (
-                 <li key={item.id}>{item.name}</li> 
-                ))} 
-            </ul> 
+            <div>
+                
+                {show.seasons?.map(podcast => (
+                    <PodcastSeasonsCard key={podcast.season} items={podcast} seasonId={podcast.season} id={showID.showId}/>
+                ))}
             </div>
-            ))} 
             </div>
     );
 };
