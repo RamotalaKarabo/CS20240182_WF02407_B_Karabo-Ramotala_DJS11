@@ -40,25 +40,30 @@ const Navbar = () => {
           
             <Link to="/" className="text-2xl font-semibold w-2/6 flex items-center gap-4">
             <img src="../src/assets/logo.png" className="w-4/6" alt="podcast hub  logo "/>
-            The PodCast Hub</Link>
+            <span className="flex flex-col hover:opacity-50">
+            <span className="font-bold text-purple-400">The</span>
+            <span className="font-extrabold"> PodCast </span>
+            <span className="font-bold text-purple-400"> Hub</span>
+            </span>
+            </Link>
           </div>
 
           {/* Navigation Links*/}
           <div className="hidden w-2/6 lg:flex items-center justify-center flex-center">
 
             {navLinks.map((items, i) => (
-              <Link key={i} to={items.path} className="ms-4 hover:font-semibold transition-all duration-300">{items.name}</Link>
+              <Link key={i} to={items.path} className="ms-4 hover:font-bold hover:text-purple-700 transition-all duration-300">{items.name}</Link>
             ))}
           </div>
             {/* Authentication buttons (Sign-in | Sign-up) */}
           <div className="hidden w-2/6 lg:flex items-center justify-end">
           <Link 
             to="/login"
-            className="px-6 py-3 border border-black rounded-full">
+            className="px-6 py-3 border border-purple-500 text-purple-900 font-bold rounded-full hover:bg-purple-500 hover:text-white border-2 transition-all duration-700">
               Log-in</Link>
           <Link 
             to="/signup"
-            className="ms-4 px-6 py-3 bg-black text-white rounded-full">
+            className="ms-4 px-6 py-3 bg-purple-900 text-white rounded-full hover:bg-purple-700 transition-all duration-700">
               Sign-up</Link>
           </div>
 

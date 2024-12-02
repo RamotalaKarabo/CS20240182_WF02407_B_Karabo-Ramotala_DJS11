@@ -32,7 +32,8 @@ const AllPodcasts = () => {
 }, []);
 
 useEffect(() => { 
-  let filtered = podcasts; 
+  let filtered = podcasts;
+   
   if (searchTerm) { 
     filtered = filtered.filter(podcast => 
       podcast.title.toLowerCase().includes(searchTerm.toLowerCase())
@@ -55,14 +56,24 @@ if (error){
   return (
     <div >
 <nav> 
-  <input type="text" 
-  placeholder="Search podcasts..." 
-  value={searchTerm} 
-  onChange={e => setSearchTerm(e.target.value)} /> 
+
+  <div className=" mx-auto max-w-xl py-2 px-6 rounded-full bg-gray-50 border flex focus-within:border-gray-300 flex-start" >
+    <input className="bg-transparent w-full focus:outline-none pr-4 font-semibold border-0 focus:ring-0 px-0 py-0"
+    type="text" 
+    placeholder="Search podcasts..." 
+    value={searchTerm} 
+    onChange={e => setSearchTerm(e.target.value)} 
+    /> 
+  </div>
+
+
   
   <select 
   value={genre} 
-  onChange={e => setGenre(e.target.value)}> 
+  onChange={e => setGenre(e.target.value)
+  }
+  className="flex flex-row items-center justify-center min-w-[130px] px-4 rounded-full font-medium tracking-wide border disabled:cursor-not-allowed disabled:opacity-50 transition ease-in-out duration-150 text-base bg-black text-white font-medium tracking-wide border-transparent"> 
+
   <option value="all">All Genres</option> 
   <option value="comedy">Comedy</option> 
   <option value="education">Education</option> 
@@ -72,7 +83,9 @@ if (error){
   
   <select 
   value={sortOrder} 
-  onChange={e => setSortOrder(e.target.value)}> 
+  onChange={e => setSortOrder(e.target.value) && setGenre(genre)
+  }
+  className="flex flex-row items-center justify-center min-w-[130px] px-4 rounded-full font-medium tracking-wide border disabled:cursor-not-allowed disabled:opacity-50 transition ease-in-out duration-150 text-base bg-black text-white font-medium tracking-wide border-transparent"> 
   <option value="asc">A-Z</option> 
   <option value="desc">Z-A</option> 
   </select> 
