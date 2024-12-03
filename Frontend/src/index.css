@@ -7,6 +7,10 @@ body{
   height: 0px;
 }
 
+*{
+  box-sizing: border-box;
+}
+
 .card {
   border: 1px solid #ccc;
   border-radius: 8px;

@@ -42,9 +42,14 @@ const App = () => {
           <Route path="/all-podcasts" element={<PodcastLayout />}>
             <Route index element={<AllPodcasts />} />
             <Route path="show/:showId" element={<Podcast />}/>
+
           </Route>
 
-          <Route path="/:showId/seasons/:seasonId" element={<Episodes />}/>
+          <Route path="seasons" element={<Episodes />}/>
+
+
+
+          
 
 
 
