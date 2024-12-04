@@ -53,6 +53,11 @@ npm start
 
 ### Here are some pictures of the web application:
 ![image](PodcastsPhotos/Screenshot%202024-12-04%20084852.png)
+![image](PodcastsPhotos/Screenshot%202024-12-04%20084958.png)
+![image](PodcastsPhotos/Screenshot%202024-12-04%20085111.png)
+![image](PodcastsPhotos/Screenshot%202024-12-04%20085147.png)
+![image](PodcastsPhotos/Screenshot%202024-12-04%20085209.png)
+![image](PodcastsPhotos/Screenshot%202024-12-04%20085315.png)
 
 ## Conclusion
 
