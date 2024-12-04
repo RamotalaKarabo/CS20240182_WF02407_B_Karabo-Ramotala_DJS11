@@ -52,7 +52,7 @@ npm start
 
 
 ### Here are some pictures of the web application:
-![image](https://user-images.githubusercontent.com/100614635/233979351-604732a6-eb97-4124-a4b9-9a07a22f7f9d.png)
+![image](PodcastsPhotos/Screenshot%202024-12-04%20084852.png)
 
 ## Conclusion
 
