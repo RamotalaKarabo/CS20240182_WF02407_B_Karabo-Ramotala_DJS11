@@ -45,7 +45,7 @@ const App = () => {
 
           </Route>
 
-          <Route path="seasons" element={<Episodes />}/>
+          <Route path="/:showId/seasons/:seasonId" element={<Episodes />}/>
 
 
 

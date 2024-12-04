@@ -30,6 +30,8 @@ const Show = ({showId}) => {
     if (error) {
         return <div>Error: {error}</div>;
     }
+
+    console.log(show.season)
     
     return (
         <div>

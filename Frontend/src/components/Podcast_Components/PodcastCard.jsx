@@ -13,8 +13,8 @@ const PodcastCard = ({items}) => {
             </div>
 
             <div className="flex flex-col justify-end align-end flex-end">
-
              <p className="mt-2 leading text-slate-500">{items.description}</p>
+             <h4 className="font-bold">Last updated: {items.updated.slice(0,10)}</h4>
              <Link to={`show/${items.id}`}className="mt-2 px-4 py-2 bg-purple-100 text-purple-700 border-purple-700 rounded-full flex flex-col flex-end items-center justify-center hover:bg-purple-500 hover:text-white duration-300">
              View Show</Link>
             </div>
