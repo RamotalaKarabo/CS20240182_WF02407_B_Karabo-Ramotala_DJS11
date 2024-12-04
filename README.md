@@ -52,25 +52,18 @@ npm start
 
 
 ### Here are some pictures of the web application:
-
 #### Homepage Photos:
-
 ![image](PodcastsPhotos/Screenshot%202024-12-04%20084852.png)
 ![image](PodcastsPhotos/Screenshot%202024-12-04%20084958.png)
-
 
 #### Cateogries Page Photos:
 ![image](PodcastsPhotos/Screenshot%202024-12-04%20085111.png)
 ![image](PodcastsPhotos/Screenshot%202024-12-04%20085147.png)
 
-
-#### Podcasts Page
-
+#### Podcasts Page Photos:
 ![image](PodcastsPhotos/Screenshot%202024-12-04%20085209.png)
 
-
-#### Search Functionality
-
+#### Search Functionality Photos:
 ![image](PodcastsPhotos/Screenshot%202024-12-04%20085315.png)
 
 
